@@ -1,37 +1,56 @@
-# 🎬 CineNote – Avaliador de Filmes e Sessões
+# 🎬 CineNote – Avaliação de Filmes e Sessões
 
-**CineNote** é um sistema web desenvolvido para facilitar a avaliação de filmes e o gerenciamento de sessões de cinema. Com uma interface moderna, acessível e responsiva, permite que usuários registrem avaliações, notas, comentários e informações de sessões.
-
----
-
-## 📌 Funcionalidades Principais
-
-### ✅ Avaliação de Filmes
-- Cadastro de **nome do filme**, **atores principais**, **gênero**, **sinopse**, **nota (1 a 10)** e **comentário** (opcional).
-- Validação de campos obrigatórios e intervalos numéricos.
-- Exibição das avaliações com destaque visual e ícone de 🎬.
-
-### ✅ Gerenciamento de Sessões
-- Cadastro de sessões com os seguintes dados:
-  - Filme (seleção entre os avaliados)
-  - Sala
-  - Horário (formato data e hora)
-  - Capacidade da sala
-- Validação de todos os campos e exibição de sessões cadastradas com ícone 🎟️.
+**CineNote** é um sistema web simples e intuitivo para avaliar filmes e gerenciar sessões de cinema.
 
 ---
 
-## 🧪 Plano de Testes (Resumo)
+## ✅ Funcionalidades
 
-| Caso | Funcionalidade | Entrada | Resultado Esperado | Status |
-|------|----------------|---------|---------------------|--------|
-| 1 | Nome do Filme vazio | "" | Mensagem de erro: "Esse campo é obrigatório." | ✅ |
-| 2 | Nota acima do limite | 11 | Mensagem de erro: "O valor deve ser igual ou menor a 10" | ✅ |
-| 3 | Comentário vazio | "" | Aceita normalmente (opcional) | ✅ |
-| 4 | Dados válidos do filme | Todos preenchidos corretamente | Avaliação exibida com sucesso | ✅ |
-| 5 | Sessão de filme | Campos válidos preenchidos | Sessão exibida com sucesso | ✅ |
+- Avaliação de filmes com:
+  - Nome, atores, gênero, sinopse, nota (1 a 10) e comentário
+- Gerenciamento de sessões:
+  - Filme, sala, data/hora e capacidade
+- Mensagens de sucesso ao adicionar filmes e sessões
+- Exibição dinâmica das avaliações e sessões
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🧪 Casos de Teste
 
+| Teste | Ação | Esperado | Resultado |
+|-------|------|----------|-----------|
+| 1 | Nome do filme vazio | Erro: "Esse campo é obrigatório." | ✅ |
+| 2 | Nota = 11 | Erro: "O valor deve ser igual ou menor a 10" | ✅ |
+| 3 | Comentário vazio | Aceita normalmente | ✅ |
+| 4 | Dados válidos | Exibe avaliação corretamente | ✅ |
+| 5 | Sessão válida | Exibe sessão corretamente | ✅ |
+
+---
+
+## ▶️ Como Usar
+
+1. Abra o arquivo `index.html` no navegador.
+2. Para versão Java Web (JSF), use o NetBeans e um servidor como Tomcat ou GlassFish.
+
+---
+
+## 📁 Estrutura
+
+- `index.html`  
+- `css/style.css`  
+- `js/script.js`  
+- `plano-de-testes.pdf`  
+- `build/CineNote.war` *(se aplicável)*  
+- `evidencias/` *(commits, repositório, tarefas)*  
+
+---
+
+## 👨‍💻 Contato
+
+- Email: contato@cinenote.com  
+- Tel: (11) 91234-5678  
+- Endereço: Rua dos Filmes, 123 – Belo Horizonte
+
+---
+
+© 2025 CineNote
